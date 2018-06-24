@@ -4,7 +4,9 @@ import "./CatCard.css";
 const CatCard = props => (
   <div className="card">
     <div className="img-container">
-      <img alt={props.name} src={props.image} />
+      <button className ="btn" onClick = {props.shuffleArray} >
+        <img alt={props.name} src={props.image} />
+      </button>
     </div>
 
   </div>
