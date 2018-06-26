@@ -71,6 +71,7 @@ class App extends React.Component {
         <Nav currentScore ={this.state.currentScore} highScore = {this.state.highScore}/>
 
         <Header>This is a cat click game </Header>
+        {/* <row> */}
         { this.state.catsArr.map( cat =>(<CatCard
             key = {cat.id}
             name={cat.name}
@@ -78,6 +79,7 @@ class App extends React.Component {
             id={`c${cat.id}`}  //template literal concaste string together
             shuffleArray = {this.shuffleArray}
           />))}
+        {/* </row> */}
       </Wrapper>
     )
   };

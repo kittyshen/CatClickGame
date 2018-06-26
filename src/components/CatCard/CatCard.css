@@ -9,14 +9,28 @@
   text-align: left;
 }
 
+@media (max-width: 640px) {
+
+  .card {
+    width: 31%;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .card {
+    width: 33%;
+  }
+} */
+
 .card > .img-container {
   height: 100%;
   overflow: hidden;
   text-align: center;
   background:rgb(255, 255, 255);
 }
-.card > .img-container > img {
-  width: 100%
+img {
+  width: 100%;
+  height:auto;
 }
 
 .card > .content {
